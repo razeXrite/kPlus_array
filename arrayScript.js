@@ -14,16 +14,7 @@ function transformArray(arr) {
 }
 
 function printArrayAsTable(arr) {
-    const chunkSize = 10;
-
-    for (let i = 0; i < arr.length; i += chunkSize) {
-        const chunk = arr.slice(i, i + chunkSize);
-        const indexedChunk = {};
-        for (let j = 0; j < chunk.length; j++) {
-            indexedChunk[i + j] = chunk[j];
-        }
-        console.table(indexedChunk);
-    }
+    console.table(arr);
 }
 
 const initialArray = createArray(50, 50);
